@@ -72,7 +72,7 @@ $$
 K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 $$
 
-Steiner proves the area will be maximal (resp. minimal) if $sin(2\theta_i)$ is negative or positive.
+Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). Notice that for parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over $P$! 
 
 **Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, and this confirms Sturm's result.
 
