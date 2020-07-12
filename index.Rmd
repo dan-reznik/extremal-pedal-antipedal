@@ -1,5 +1,5 @@
 --- 
-title: "Pedal and Antipedal Triangles of Extremal Area"
+title: "Extremal Area Pedal and Antipedal Triangles"
 author: Mark Helman and Dan Reznik
 date: "Last update: `r lubridate::with_tz(Sys.time(),tzone='Brazil/East')`"
 output:
@@ -33,7 +33,32 @@ knitr::opts_chunk$set(
 
 # Introducion
 
+Given a triangle $T={V_1}{V_2}{V_3}$, its *pedal triangle* with respect to a point $P$ (called the *pedal point*) is defined by the feet of perpendiculars from $P$ onto the sides of $T$. Additionally, the *antipedal triangle* (also with respect to $P$) has sides through $V_i$ perpendicular to $(V_i-P)$ (its vertices lie at the intersection of said sides) [@mw].
+
+- insert figure of pedal and antipedal w/ Q
+
+# Sturm's Theorem (1823)
+
+- circular isocurves of pedal area
+
+# Steiner's Theorem: Krümmungs Schwerpunkt
+
+- K = media dos sin(2theta), i.e., X3 on a triangle
+
+- isocurves of pedal area are circular (Sturm's generalized)
+- pedal with respect to K is extremal
+
+- reference german paper
+- reference website about constant area
+
 # Iso-Curves of the Antipedal Triangle
+
+## Gallatly's Theorem
+
+- X4,X3 is isogonal pair
+- since the pedal wrt X3 is maximal, $A'(P) A''(P^*)  = A^2$. since A'(P) is maximal when P=X3, then A''(P^*) must be minimal at X4=isog of X3.
+- the minimal antipedal is the anticomplementary triangle.
+- the maximal pedal is the medial triangle.
 
 ```{r}
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
