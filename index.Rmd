@@ -84,7 +84,7 @@ According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.
 
 # Minimal-Area Antipedal 
 
-Highly non-linear isocurves of area for the antipedal triangle with respect to points in the plane are shown below for three triangles (acute, right, and obtuse). Note the area of the antipedal is zero on the circumcircle, where it shrinkts to a point. Now, where is it extremal?
+Highly non-linear isocurves of area for the antipedal triangle with respect to points in the plane are shown below for three triangles (acute, right, and obtuse). Note that on the circumcircle the antipoedal triangle shrinks to a point, so its area is zero. The interesting question is where is it extremal?
 
 <!--An elegant theorem appearing in [@gallatly] states that the isogonal conjugate of the antipedal triangle of $T$ with respect to a point $P$ is the antipedal triangle of $T$ with respect to $P^*$, the isogonal conjugate of P.
 
@@ -101,9 +101,9 @@ A beautiful theorem appearing in [@gallatly]
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
 ```
 
-It turns out $T''$ minimizes area with respect to the Orthocenter $X_4$ of $T$, i.e., it is the anticomplementary triangle [@mw] and the minimal area is $4A$.
+It turns out the antipedal with respect to the Orthocenter $X_4$ minimizes area. Therefore, the extremal antipedal is the anticomplementary triangle [@mw] and the minimal area is $4A$.
 
-The antipedal's minimal pedal polygon will be its medial, i.e., $T$.
+As for any triangle (see above), the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
 
 # Conclusion
 
