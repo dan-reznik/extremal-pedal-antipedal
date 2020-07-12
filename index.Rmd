@@ -1,0 +1,46 @@
+--- 
+title: "Pedal and Antipedal Triangles of Extremal Area"
+author: Mark Helman and Dan Reznik
+date: "Last update: `r lubridate::with_tz(Sys.time(),tzone='Brazil/East')`"
+output:
+  bookdown::html_document2:
+      theme: darkly
+      highlight: tango
+      css: style.css
+      toc_depth: 2
+      toc: true
+      toc_float:
+        toc_collapsed: true
+        smooth_scroll: yes
+      fig_caption: yes
+      number_sections: yes
+link-citations: yes
+bibliography: [references.bib]
+csl: computer.csl
+---
+
+```{r,echo=F}
+knitr::opts_chunk$set(
+  cache=T,
+  collapse=T,
+  comment="#>",
+  dpi=300,
+  fig.align="center",
+  out.width='100%',
+  echo=F
+)
+```
+
+# Introducion
+
+# Iso-Curves of the Antipedal Triangle
+
+```{r}
+knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
+```
+
+Any comments, ideas, corrections, suggestions, and proofs contributed are very welcome. Email me at: `dreznik _theat_ gmail _thedot_ com`.
+
+***
+
+`r if (knitr::is_html_output()) '# References'`
