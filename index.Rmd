@@ -70,13 +70,13 @@ $$
 K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 $$
 
-Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). Notice that for parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over $P$. 
+Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). Notice that for triangles, this sum is always positive, i.e., the extremal area pedal is maximal. For parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over $P$. 
 
-**Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, and this confirms Sturm's result.
+**Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, confirming Sturm's result.
 
 <!--- TO DO: reference website about constant area-->
 
-## A potential misnomer: X(1115)
+## Correcting X(1115)
 
 According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.html) [@mw], the triangle center with barycentrics $\pi-\theta_i$ was named by Honsberger (1995) "Steiner's Curvature Centroid", listed as $X_{1115}$ on ETC [@etc]. This could be confusing and/or erroneous. Steiner's Curvature Centroid for a triangle is simply $X_3$.
 
@@ -84,11 +84,11 @@ Note: as of July 10, 2020, Prof. Clark Kimberling has already changed $X_{1115}$
 
 # Minimal-Area Antipedal 
 
-The minimal-area antipedal must occur with respect to the Orthocenter $X_4$ of the reference triangle. To see this, recall a theorem by Gallatly, page 58 [@gallatly1914]:
+It turns out the minimal-area antipedal is the one with respect to the Orthocenter $X_4$. This is a corollary from theorem by Gallatly, page 58 [@gallatly1914]:
 
 >Let $T$ be a triangle and $T'$ its pedal with respect to a point $P$. Let $T^{*}$ be the antipedal of $T$ with respect to $P^*$, the isogonal conjugate of $P$. Let $A,A',A^{*}$ denote the areas of the three mentioned triangles. Then, $A'A^{*}=A^2$.  
 
-To see this, recall $X_4$ is the isogonal conjugate of $X_3$. Suppose another point $Y$ existed with respect to which an antipedal had area lower than $A^*$. With $A$ constant, this would imply a pedal with respect to $Y^*$, the isogonal of $Y$, of area higher than $A'$, a contradiction since $A'$ is maximal.
+Recall $X_4$ is the isogonal conjugate of $X_3$. Suppose another point $Y$ existed with respect to which an antipedal had area lower than $A^*$. With $A$ constant, this would imply a pedal with respect to $Y^*$, the isogonal of $Y$, of area higher than $A'$, a contradiction since $A'$ is maximal.
 
 So the minimal antipedal is the anticomplementary triangle [@mw], whose area is $4A$. As before, the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
 
@@ -103,9 +103,9 @@ A beautiful theorem appearing in [@gallatly]
 - the minimal antipedal is the anticomplementary triangle.
 - the maximal pedal is the medial triangle. -->
 
-## Iso-curves
+## Iso-curves of Antipedal Area
 
-Below non-linear isocurves of area for the antipedal triangle with respect to points in the plane is shownm. From left to right: an acute, right, and obtuse triangles are shown. The minimal-area antipedal (anticomplementary triangle) is shown green, as is this triangle's $X_3'$ (reference $X_4$). Note zero-area iso-curves along the circumcircle, where the antipedal triangle shrinks to a point.
+Shown below are the non-linear isocurves of antipedal triangle area with respect to points in the plane. From left to right: acute, right, and obtuse triangles are shown. The minimal-area antipedal (anticomplementary triangle) is shown green on the first and third plot, as is this triangle's Circumcenter $X_3'$ (reference $X_4$). Note zero-area iso-curves along the circumcircle, where the antipedal triangle shrinks to a point. Also note that for the 2nd case, $X_4$ is on the right angle vertex. 
 
 ```{r}
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
