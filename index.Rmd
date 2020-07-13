@@ -58,11 +58,9 @@ $$
 A'=\frac{A}{4}[1-(\frac{d}{R})^2]
 $$
 
-Where $A$ is the area of the reference $T$, and $d,R$ are the radius of the isocircle and $R$ the circumradius, respectively.
+Where $A$ is the area of the reference $T$, $d$ is the radius of the isocircle, and $R$ the circumradius, respectively. The formula implies that $A'=A/4$ is maximal at $d=0$, i.e., $P=X_3$. So the extremal area pedal triangle is the pedal with respect to $X_3$, i.e., the *medial* triangle, with vertices at the midpoint of the sides of $T$.
 
-Note that when $d<R$ the area is positive. When $d=R$, $P$ is on the circumcircle and pedal degenerates to a zero-area Simson Line [@mw]. For $d>R$, Sturm's pedal area becomes negative, i.e., the triangle's vertices invert order.
-
-It is easy to see that $A$ is maximized at $A/4$ when $d=0$, i.e., $P=X_3$. So the extremal area pedal triangle is the pedal with respect to $X_3$, i.e., the *medial* triangle, with vertices at the midpoint of the sides of $T$.
+Note that when $d<R$ the area is positive (the vertices of both $T$ and $T'$ are ordered alike). At $d=R$, $P$ is on the circumcircle and $T'$ degenerates to a zero-area triangle known as the Simson Line [@mw]. For $d>R$, the vertices of the pedal are in reverse order with respect to $T$ and its signed area becomes negative.
 
 # Steiner's Curvature Centroid
 

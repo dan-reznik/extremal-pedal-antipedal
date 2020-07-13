@@ -1525,7 +1525,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Extremal Area Pedal and Antipedal Triangles</h1>
 <h4 class="author">Mark Helman, Ronaldo Garcia, and Dan Reznik</h4>
-<h4 class="date">Last update: 2020-07-12 21:04:55</h4>
+<h4 class="date">Last update: 2020-07-12 21:23:46</h4>
 
 </div>
 
@@ -1547,9 +1547,8 @@ div.tocify {
 <p><span class="math display">\[
 A&#39;=\frac{A}{4}[1-(\frac{d}{R})^2]
 \]</span></p>
-<p>Where <span class="math inline">\(A\)</span> is the area of the reference <span class="math inline">\(T\)</span>, and <span class="math inline">\(d,R\)</span> are the radius of the isocircle and <span class="math inline">\(R\)</span> the circumradius, respectively.</p>
-<p>Note that when <span class="math inline">\(d&lt;R\)</span> the area is positive. When <span class="math inline">\(d=R\)</span>, <span class="math inline">\(P\)</span> is on the circumcircle and pedal degenerates to a zero-area Simson Line <span class="citation">[<a href="#ref-mw" role="doc-biblioref">1</a>]</span>. For <span class="math inline">\(d&gt;R\)</span>, Sturm’s pedal area becomes negative, i.e., the triangle’s vertices invert order.</p>
-<p>It is easy to see that <span class="math inline">\(A\)</span> is maximized at <span class="math inline">\(A/4\)</span> when <span class="math inline">\(d=0\)</span>, i.e., <span class="math inline">\(P=X_3\)</span>. So the extremal area pedal triangle is the pedal with respect to <span class="math inline">\(X_3\)</span>, i.e., the <em>medial</em> triangle, with vertices at the midpoint of the sides of <span class="math inline">\(T\)</span>.</p>
+<p>Where <span class="math inline">\(A\)</span> is the area of the reference <span class="math inline">\(T\)</span>, <span class="math inline">\(d\)</span> is the radius of the isocircle, and <span class="math inline">\(R\)</span> the circumradius, respectively. The formula implies that <span class="math inline">\(A&#39;=A/4\)</span> is maximal at <span class="math inline">\(d=0\)</span>, i.e., <span class="math inline">\(P=X_3\)</span>. So the extremal area pedal triangle is the pedal with respect to <span class="math inline">\(X_3\)</span>, i.e., the <em>medial</em> triangle, with vertices at the midpoint of the sides of <span class="math inline">\(T\)</span>.</p>
+<p>Note that when <span class="math inline">\(d&lt;R\)</span> the area is positive (the vertices of both <span class="math inline">\(T\)</span> and <span class="math inline">\(T&#39;\)</span> are ordered alike). At <span class="math inline">\(d=R\)</span>, <span class="math inline">\(P\)</span> is on the circumcircle and <span class="math inline">\(T&#39;\)</span> degenerates to a zero-area triangle known as the Simson Line <span class="citation">[<a href="#ref-mw" role="doc-biblioref">1</a>]</span>. For <span class="math inline">\(d&gt;R\)</span>, the vertices of the pedal are in reverse order with respect to <span class="math inline">\(T\)</span> and its signed area becomes negative.</p>
 </div>
 <div id="steiners-curvature-centroid" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Steiner’s Curvature Centroid</h1>
@@ -1569,7 +1568,7 @@ K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 <h1><span class="header-section-number">4</span> Minimal-Area Antipedal</h1>
 <p>The minimal-area antipedal must occur with respect to the Orthocenter <span class="math inline">\(X_4\)</span> of the reference triangle. To see this, recall a theorem by Gallatly, page 58 <span class="citation">[<a href="#ref-gallatly1914" role="doc-biblioref">5</a>]</span>:</p>
 <blockquote>
-<p>Let <span class="math inline">\(T\)</span> be a triangle and <span class="math inline">\(T&#39;\)</span> its pedal with respect to a point <span class="math inline">\(P\)</span>. Let <span class="math inline">\(T^*\)</span> be the antipedal of <span class="math inline">\(T\)</span> with respect to <span class="math inline">\(P^*\)</span>, the isogonal conjugate of <span class="math inline">\(P\)</span>. Let <span class="math inline">\(A,A&#39;,A^*\)</span> denote the areas of the three mentioned triangles. Then, <span class="math inline">\(A&#39;A^*=A^2\)</span>.</p>
+<p>Let <span class="math inline">\(T\)</span> be a triangle and <span class="math inline">\(T&#39;\)</span> its pedal with respect to a point <span class="math inline">\(P\)</span>. Let <span class="math inline">\(T^{*}\)</span> be the antipedal of <span class="math inline">\(T\)</span> with respect to <span class="math inline">\(P^*\)</span>, the isogonal conjugate of <span class="math inline">\(P\)</span>. Let <span class="math inline">\(A,A&#39;,A^{*}\)</span> denote the areas of the three mentioned triangles. Then, <span class="math inline">\(A&#39;A^{*}=A^2\)</span>.</p>
 </blockquote>
 <p>To see this, recall <span class="math inline">\(X_4\)</span> is the isogonal conjugate of <span class="math inline">\(X_3\)</span>. Suppose another point <span class="math inline">\(X&#39;\)</span> existed with respect to which the antipedal had lower area than <span class="math inline">\(A^*\)</span>. This would be a contradiction, since <span class="math inline">\(A&#39;\)</span> is maximal.</p>
 <p>Given a triangle, the antipedal with respect to <span class="math inline">\(X_4\)</span> is its the anticomplementary triangle <span class="citation">[<a href="#ref-mw" role="doc-biblioref">1</a>]</span>, so the minimal area is <span class="math inline">\(4A\)</span>. As before, the antipedal’s maximal-area pedal polygon will be its medial, i.e., the original <span class="math inline">\(T\)</span> itself.</p>
