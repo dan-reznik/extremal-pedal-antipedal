@@ -101,13 +101,17 @@ A beautiful theorem appearing in [@gallatly]
 - the minimal antipedal is the anticomplementary triangle.
 - the maximal pedal is the medial triangle. -->
 
-The figure below shows the non-linear isocurves of area for the antipedal triangle with respect to points in the plane are shown below for three triangles (acute, right, and obtuse). Note the zero-area iso-curve along the circumcircle, where the antipedal triangle shrinks to a point.
+## Iso-curves
+
+Below non-linear isocurves of area for the antipedal triangle with respect to points in the plane is shownm. From left to right: an acute, right, and obtuse triangles are shown. The minimal-area antipedal (anticomplementary triangle) is shown green, as is this triangle's $X_3'$ (reference $X_4$). Note zero-area iso-curves along the circumcircle, where the antipedal triangle shrinks to a point.
 
 ```{r}
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
 ```
 
 # Conclusion
+
+We salute Sturm, Steiner, and Gallatly for these wonderful results!
 
 Comments, ideas, corrections, suggestions, and proofs contributed are very welcome. Email me us at: `dreznik _theat_ gmail _thedot_ com`.
 
