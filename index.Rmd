@@ -7,7 +7,7 @@ output:
       theme: darkly
       highlight: tango
       css: style.css
-      toc_depth: 2
+      toc_depth: 1
       toc: true
       toc_float:
         toc_collapsed: true
@@ -76,9 +76,11 @@ Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i
 
 <!--- TO DO: reference website about constant area-->
 
-## A wrongly-named triangle center?
+## A potential misnomer: X(1115)
 
-According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.html) [@mw], the triangle center with barycentrics $\pi-\theta_i$ was named by Honsberger (1995) "Steiner's Curvature Centroid", listed as $X_{1115}$ on ETC [@etc]. In our view this could be confusing and/or erroneous. Steiner's Curvature Centroid for a triangle is simply $X_3$.
+According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.html) [@mw], the triangle center with barycentrics $\pi-\theta_i$ was named by Honsberger (1995) "Steiner's Curvature Centroid", listed as $X_{1115}$ on ETC [@etc]. This could be confusing and/or erroneous. Steiner's Curvature Centroid for a triangle is simply $X_3$.
+
+Note: as of July 10, 2020, Prof. Clark Kimberling has already changed $X_{1115}$ to *Exterior-Angle Curvature Centroid* [@etc].
 
 # Minimal-Area Antipedal 
 

@@ -1341,7 +1341,7 @@ h6 {
 }
 </style>
 
-<style type="text/css">body .main-container {max-width: 2000px;}body content { zoom: 300%; }.slick-slide {margin-left: 50px;margin-right: 20px;}.slick-prev:before {color: white;font-size: 50px;}.slick-next:before {color: white;font-size: 50px;}.slickR {font-family: 'slick';font-size: 40px;line-height: 1;max-height: 505px;min-height: 505px;object-fit: contain;}.tocify {}.toc-content {}img {}.col-md-3 {width:15%;}.col-md-9 {width:75%;}#TOC {position: fixed;left: 10px;width:200px;max-width:20%;overflow:auto;}</style>
+<style type="text/css">body .main-container {max-width: 2000px;}body content { zoom: 300%; }.slick-slide {margin-left: 50px;margin-right: 20px;}.slick-prev:before {color: white;font-size: 50px;}.slick-next:before {color: white;font-size: 50px;}.slickR {font-family: 'slick';font-size: 40px;line-height: 1;max-height: 505px;min-height: 505px;object-fit: contain;}.tocify {}.toc-content {}img {}.col-md-3 {width:15%;}.col-md-9 {width:75%;}#TOC {position: fixed;left: 10px;width:200px;max-width:15%;overflow:auto;}</style>
 
 
 
@@ -1525,7 +1525,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Extremal Area Pedal and Antipedal Triangles</h1>
 <h4 class="author">Mark Helman, Ronaldo Garcia, and Dan Reznik</h4>
-<h4 class="date">Last update: 2020-07-12 21:37:14</h4>
+<h4 class="date">Last update: 2020-07-13 09:12:27</h4>
 
 </div>
 
@@ -1559,9 +1559,10 @@ K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 <p>Steiner proves the area will be maximal (resp. minimal) if <span class="math inline">\(\sum_i{sin(2\theta_i)}\)</span> is positive (resp. negative). Notice that for parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over <span class="math inline">\(P\)</span>.</p>
 <p><strong>Corollary</strong>: the Centroid of Curvature for a triangle is <span class="math inline">\(X_3\)</span>, since its barycentrics are <span class="math inline">\(sin(2\theta_i)\)</span>, and this confirms Sturm’s result.</p>
 <!--- TO DO: reference website about constant area-->
-<div id="a-wrongly-named-triangle-center" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> A wrongly-named triangle center?</h2>
-<p>According to <a href="https://mathworld.wolfram.com/SteinerCurvatureCentroid.html">Mathworld</a> <span class="citation">[<a href="#ref-mw" role="doc-biblioref">1</a>]</span>, the triangle center with barycentrics <span class="math inline">\(\pi-\theta_i\)</span> was named by Honsberger (1995) “Steiner’s Curvature Centroid”, listed as <span class="math inline">\(X_{1115}\)</span> on ETC <span class="citation">[<a href="#ref-etc" role="doc-biblioref">4</a>]</span>. In our view this could be confusing and/or erroneous. Steiner’s Curvature Centroid for a triangle is simply <span class="math inline">\(X_3\)</span>.</p>
+<div id="a-potential-misnomer-x1115" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> A potential misnomer: X(1115)</h2>
+<p>According to <a href="https://mathworld.wolfram.com/SteinerCurvatureCentroid.html">Mathworld</a> <span class="citation">[<a href="#ref-mw" role="doc-biblioref">1</a>]</span>, the triangle center with barycentrics <span class="math inline">\(\pi-\theta_i\)</span> was named by Honsberger (1995) “Steiner’s Curvature Centroid”, listed as <span class="math inline">\(X_{1115}\)</span> on ETC <span class="citation">[<a href="#ref-etc" role="doc-biblioref">4</a>]</span>. This could be confusing and/or erroneous. Steiner’s Curvature Centroid for a triangle is simply <span class="math inline">\(X_3\)</span>.</p>
+<p>Note: as of July 10, 2020, Prof. Clark Kimberling has already changed <span class="math inline">\(X_{1115}\)</span> to <em>Exterior-Angle Curvature Centroid</em> <span class="citation">[<a href="#ref-etc" role="doc-biblioref">4</a>]</span>.</p>
 </div>
 </div>
 <div id="minimal-area-antipedal" class="section level1" number="4">
@@ -1661,7 +1662,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
