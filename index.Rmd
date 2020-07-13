@@ -88,7 +88,7 @@ The minimal-area antipedal must occur with respect to the Orthocenter $X_4$ of t
 
 To see this, recall $X_4$ is the isogonal conjugate of $X_3$. Suppose another point $Y$ existed with respect to which an antipedal had area lower than $A^*$. With $A$ constant, this would imply a pedal with respect to $Y^*$, the isogonal of $Y$, of area higher than $A'$, a contradiction since $A'$ is maximal.
 
-To summarize: given a triangle, the antipedal with respect to $X_4$ is its the anticomplementary triangle [@mw], so the minimal area is $4A$. As before, the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
+So the minimal antipedal is the anticomplementary triangle [@mw], whose area is $4A$. As before, the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
 
 <!--An elegant theorem appearing in [@gallatly] states that the isogonal conjugate of the antipedal triangle of $T$ with respect to a point $P$ is the antipedal triangle of $T$ with respect to $P^*$, the isogonal conjugate of P.
 
