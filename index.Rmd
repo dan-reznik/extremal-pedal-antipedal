@@ -84,7 +84,13 @@ According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.
 
 # Minimal-Area Antipedal 
 
-Highly non-linear isocurves of area for the antipedal triangle with respect to points in the plane are shown below for three triangles (acute, right, and obtuse). Note that on the circumcircle the antipoedal triangle shrinks to a point, so its area is zero. The interesting question is where is it extremal?
+The minimal-area antipedal must occur with respect to the Orthocenter $X_4$ of the reference triangle. To see this, recall a theorem by Gallatly, page 58 [@gallatly1914]:
+
+>Let $T$ be a triangle and $T'$ its pedal with respect to a point $P$. Let $T^{*}$ be the antipedal of $T$ with respect to $P^*$, the isogonal conjugate of $P$. Let $A,A',A^{*}$ denote the areas of the three mentioned triangles. Then, $A'A^{*}=A^2$.  
+
+To see this, recall $X_4$ is the isogonal conjugate of $X_3$. Suppose another point $X'$ existed with respect to which the antipedal had lower area than $A^*$. This would be a contradiction, since $A'$ is maximal.
+
+Given a triangle, the antipedal with respect to $X_4$ is its the anticomplementary triangle [@mw], so the minimal area is $4A$. As before, the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
 
 <!--An elegant theorem appearing in [@gallatly] states that the isogonal conjugate of the antipedal triangle of $T$ with respect to a point $P$ is the antipedal triangle of $T$ with respect to $P^*$, the isogonal conjugate of P.
 
@@ -97,13 +103,11 @@ A beautiful theorem appearing in [@gallatly]
 - the minimal antipedal is the anticomplementary triangle.
 - the maximal pedal is the medial triangle. -->
 
+The figure below shows the non-linear isocurves of area for the antipedal triangle with respect to points in the plane are shown below for three triangles (acute, right, and obtuse). Note the zero-area iso-curve along the circumcircle, where the antipedal triangle shrinks to a point.
+
 ```{r}
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
 ```
-
-It turns out the antipedal with respect to the Orthocenter $X_4$ minimizes area. Therefore, the extremal antipedal is the anticomplementary triangle [@mw] and the minimal area is $4A$.
-
-As for any triangle (see above), the antipedal's maximal-area pedal polygon will be its medial, i.e., the original $T$ itself.
 
 # Conclusion
 
