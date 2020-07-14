@@ -41,7 +41,7 @@ knitr::include_graphics("pics/pedal and antipedal.png")
 
 # Sturm's Theorem
 
-In 1823, a then 20 year old Jacques Charles François Sturm (1803-1855), famously known for his Sturm–Liouville theory, proved the following remarkable fact [@ostermann2012]: 
+In 1823, a then 20 year old french mathematician Jacques Charles François Sturm (1803-1855), famously known for his Sturm–Liouville theory, proved the following remarkable fact [@ostermann2012]: 
 
 >The isocurves of constant area of the pedal polygon $T'$ are circles centered on the Circumcenter $X_3$.
 
@@ -70,25 +70,27 @@ knitr::include_graphics("pics/0001_tri_pedals.png")
 
 # Steiner's Curvature Centroid
 
-A short 2 years later, eminent mathematician Jakob Steiner (1796-1863), only 6 years Sturm's senior, generalized Sturm's result to all polygons. He discovered that a special point $K$ called the *Curvature Centroid* (der "Krümmungs-Schwerpunkt") can be computed for any polygon with respect to which the pedal polygons has extremal area [@steiner1838]. Let $V_i,\theta_i$ denote an N-gon vertices and internal angles. $K$ is given by:
+A short 2 years later, eminent swiss mathematician Jakob Steiner (1796-1863), only 6 years Sturm's senior, generalized Sturm's result to all polygons. He discovered a special point $K$ called the *Curvature Centroid* (der "Krümmungs-Schwerpunkt") associated with a polygon with respect to which the pedal polygon has extremal area [@steiner1838]. Let $V_i,\theta_i$ denote an N-gon vertices and internal angles. $K$ is given by:
 
 $$
 K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 $$
 
-Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). The picture below depicts in the space $\theta_1,\theta_2$ the sum of double angle sines for a triangle. As it is apparent, this sum is always positive, i.e., the area of the extremal pedal is maximal.
+**Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, confirming Sturm's.
+
+Furthermore, Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). It turns out that for triangles the sum is always positive and is maximal for equilaterals at $3\sin(2\pi/3)=3\sqrt{3}/2\simeq{2.6}$). So the extremaltriangular pedal (the medial) has maximum area.
+
+Below are depicted the isocurves of the strictly positive sum of double-angle sines for a triangle in the space $\theta_1,\theta_2$. The white line represents the family of right-triangles. 
 
 ```{r,out.width="50%"}
-knitr::include_graphics("pics/sum of double sines for triangle.png")
+knitr::include_graphics("pics/0004_sum2t.png")
 ```
-
-**Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, confirming Sturm's result.
 
 <!--- TO DO: reference website about constant area-->
 
 ## Correcting X(1115)
 
-According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.html) [@mw], the triangle center with barycentrics $\pi-\theta_i$ was named by Honsberger (1995) "Steiner's Curvature Centroid", listed as $X_{1115}$ on ETC [@etc]. This could be confusing and/or erroneous. Steiner's Curvature Centroid for a triangle is simply $X_3$.
+According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.html) [@mw], the triangle center with barycentrics $\pi-\theta_i$ was named by Honsberger (1995) "Steiner's Curvature Centroid", listed as $X_{1115}$ on ETC [@etc]. This could be confusing. Steiner's Curvature Centroid for a triangle is simply $X_3$.
 
 Note: as of July 10, 2020, Prof. Clark Kimberling has already changed $X_{1115}$ to *Exterior-Angle Curvature Centroid* [@etc].
 
@@ -133,7 +135,7 @@ knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
 
 ## For a 5-gon
 
-The iso-curves of area for the antipedal of a 5-gon (blue) are shown below. Left shows regular, right irregular. For the regular case a perfectly circular band (shown Cyan) exists for which the antipedal signed area is zero. An antipedal with respect to a point on this circle is shown green. For the irregular case, the zero-area band (Cyan) is wavy. For reference, the antipedal polygon (green) with respect to the same point $P'$ in the left case is shown. 
+Iso-curves of area for the antipedal of a 5-gon (blue) are shown below. Left shows regular, right irregular. For the regular case we observe a perfectly circular band (shown Cyan) of points with respect to which the antipedal signed area is zero. A sample antipedal with respect to a point on this circle is shown green. For the irregular case, the zero-area band (Cyan) is wavy. For reference, the antipedal polygon (green) with respect to the same point $P'$ in the left case is shown. 
 
 ```{r,out.width="100%"}
 knitr::include_graphics("pics/0003_pent_antipedals.png")
