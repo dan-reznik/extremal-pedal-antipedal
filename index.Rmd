@@ -62,6 +62,12 @@ Where $A$ is the area of the reference $T$, $d$ is the radius of the isocircle, 
 
 Note that when $d<R$ the area is positive (the vertices of both $T$ and $T'$ are ordered alike). At $d=R$, $P$ is on the circumcircle and $T'$ degenerates to a zero-area triangle known as the Simson Line [@mw]. For $d>R$, the vertices of the pedal are in reverse order with respect to $T$ and its signed area becomes negative.
 
+The isocurves of pedal area are depicted below for both regular (left) and obtuse (right) triangles. The circumcircle, where the pedal area is zero is shown cyan
+
+```{r,out.width="80%"}
+knitr::include_graphics("pics/0001_tri_pedals.png")
+```
+
 # Steiner's Curvature Centroid
 
 A short 2 years later, eminent mathematician Jakob Steiner (1796-1863), only 6 years Sturm's senior, generalized Sturm's result to all polygons. He discovered that a special point $K$ called the *Curvature Centroid* (der "Krümmungs-Schwerpunkt") can be computed for any polygon with respect to which the pedal polygons has extremal area [@steiner1838]. Let $V_i,\theta_i$ denote an N-gon vertices and internal angles. $K$ is given by:
@@ -70,7 +76,11 @@ $$
 K = \frac{\sum_{i=1}^N{\sin(2\theta_i)V_i}}{\sum_{i=1}^N{\sin(2\theta_i)}}
 $$
 
-Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). Notice that for triangles, this sum is always positive, i.e., the extremal area pedal is maximal. For parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over $P$. 
+Steiner proves the area will be maximal (resp. minimal) if $\sum_i{sin(2\theta_i)}$ is positive (resp.  negative). The picture below depicts in the space $\theta_1,\theta_2$ the sum of double angle sines for a triangle. As it is apparent, this sum is always positive, i.e., the area of the extremal pedal is maximal.
+
+```{r,out.width="50%"}
+knitr::include_graphics("pics/sum of double sines for triangle.png")
+```
 
 **Corollary**: the Centroid of Curvature for a triangle is $X_3$, since its barycentrics are $sin(2\theta_i)$, confirming Sturm's result.
 
@@ -82,9 +92,21 @@ According to [Mathworld](https://mathworld.wolfram.com/SteinerCurvatureCentroid.
 
 Note: as of July 10, 2020, Prof. Clark Kimberling has already changed $X_{1115}$ to *Exterior-Angle Curvature Centroid* [@etc].
 
-# Minimal-Area Antipedal 
+## Polygons
 
-It turns out the minimal-area antipedal is the one with respect to the Orthocenter $X_4$. This is a corollary from theorem by Gallatly, page 58 [@gallatly1914]:
+For parallelograms, the sum of double-angle sines is zero. Indeed, the area of pedal polygons to this shape is invariant over $P$. 
+
+Depicted below is the case of $N=5$ regular (left) and irregular (right), where $K$ denotes Steiner's Curvature Centroid and $C_2$ the center of area. In the irregular case they don't match. Notice the sum of sines of double angles is negative implying the extremal pedal (shown red) has minimum area.
+
+```{r,out.width="100%"}
+knitr::include_graphics("pics/0002_pent_pedals.png")
+```
+
+# Antipedal Area
+
+## For a Triangle
+
+It turns out a minimal-area antipedal for a triangle is unique: it is the one with respect to the Orthocenter $X_4$. This is a corollary to the following theorem by Gallatly, page 58 [@gallatly1914]:
 
 >Let $T$ be a triangle and $T'$ its pedal with respect to a point $P$. Let $T^{*}$ be the antipedal of $T$ with respect to $P^*$, the isogonal conjugate of $P$. Let $A,A',A^{*}$ denote the areas of the three mentioned triangles. Then, $A'A^{*}=A^2$.  
 
@@ -103,12 +125,18 @@ A beautiful theorem appearing in [@gallatly]
 - the minimal antipedal is the anticomplementary triangle.
 - the maximal pedal is the medial triangle. -->
 
-## Iso-curves of Antipedal Area
-
 Shown below are the non-linear isocurves of antipedal triangle area with respect to points in the plane. From left to right: acute, right, and obtuse triangles are shown. The minimal-area antipedal (anticomplementary triangle) is shown green on the first and third plot, as is this triangle's Circumcenter $X_3'$ (reference $X_4$). Note zero-area iso-curves along the circumcircle, where the antipedal triangle shrinks to a point. Also note that for the 2nd case, $X_4$ is on the right angle vertex. 
 
 ```{r}
 knitr::include_graphics("pics/poly isoareas heavy graphs v1.png")
+```
+
+## For a 5-gon
+
+The iso-curves of area for the antipedal of a 5-gon (blue) are shown below. Left shows regular, right irregular. For the regular case a perfectly circular band (shown Cyan) exists for which the antipedal signed area is zero. An antipedal with respect to a point on this circle is shown green. For the irregular case, the zero-area band (Cyan) is wavy. For reference, the antipedal polygon (green) with respect to the same point $P'$ in the left case is shown. 
+
+```{r,out.width="100%"}
+knitr::include_graphics("pics/0003_pent_antipedals.png")
 ```
 
 # Conclusion
